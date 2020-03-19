@@ -11718,3 +11718,19 @@ ul.cities li.show {
 .fadeInDown {
   animation-name: fadeInDown;
 }
+@media (max-width: 991px) {
+	.navbar .container .row{
+		max-height: 1000px;
+	}
+.navbar-collapse {
+	max-height: 1px;
+	transition: 0.5s;
+	overflow: hidden;
+	opacity: 0;
+
+}
+.navbar-collapse.show {
+	max-height: 1000px;
+	opacity: 1;
+}
+}

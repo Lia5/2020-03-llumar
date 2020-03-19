@@ -54,6 +54,18 @@ $(function() {
     }
 
 
+    if(jQuery('.navbar-toggler').length) {
+      $('.navbar-toggler').on('click', function(){
+        $(this).toggleClass('collapsed');
+        // $('#topmenu').toggleClass('collapse');
+        $('#topmenu').toggleClass('show');
+        if( $(this).attr('aria-expanded') == 'false') {
+          $(this).attr('aria-expanded', "true");
+        } else {
+          $(this).attr('aria-expanded', "false");
+        };
+      })
+    }
 
 
 
